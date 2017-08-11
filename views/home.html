@@ -1,8 +1,23 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>Welcome to Home!</h1>z
-<select name="" id="">
-   <option value=""></option>
+<h1>Welcome to Home!</h1>
+<label>Hotels</lable>
+<select name="hotels" id="">
+   {% for place in templateHotels %}
+   <option>{{place.name}}</option>
+   {% endfor %}
+</select>
+<label>Restaurants</lable>
+<select name="restaurants" id="">
+   {% for place in templateRestaurants %}
+   <option>{{place.name}}</option>
+   {% endfor %}
+</select>
+<label>Activities</lable>
+<select name="activities" id="">
+   {% for place in templateActivities %}
+   <option>{{place.name}}</option>
+   {% endfor %}
  </select>
 {% endblock %}
