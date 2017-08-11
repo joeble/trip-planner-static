@@ -2,19 +2,19 @@
 
 {% block content %}
 <h1>Welcome to Home!</h1>
-<label>Hotels</lable>
+<label>Hotels</label>
 <select name="hotels" id="">
    {% for place in templateHotels %}
    <option>{{place.name}}</option>
    {% endfor %}
 </select>
-<label>Restaurants</lable>
+<label>Restaurants</label>
 <select name="restaurants" id="">
    {% for place in templateRestaurants %}
    <option>{{place.name}}</option>
    {% endfor %}
 </select>
-<label>Activities</lable>
+<label>Activities</label>
 <select name="activities" id="">
    {% for place in templateActivities %}
    <option>{{place.name}}</option>
